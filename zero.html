@@ -54,58 +54,11 @@
   <!-- ==== Main Section ==== -->
   <main class="d-flex flex-column h-100" onload="displayGrid(grid1, 'Grid1-Default')">
   
-    <div class="container-fluid mazeapp">
+    <div class="container-fluid">
       <nav class="nav">
-        <a href="app.html" class="nav-link active">First</a>
+        <a href="app.html" class="nav-link">First</a>
         <a href="zero.html" class="nav-link">Zeroth</a>
       </nav>
-      <div class="row mt-1 mx-auto">
-        <div class="col-md-4">
-          <!-- Directions of the coding challenge -->
-          <div class="card">
-            <h3 class="card-header bg-primary text-white">Zero Hour Coding Challenge</h3>
-            <div class="card-body">
-              <div>
-                <p>Presented here is a Row by Column matrix consisting of booleans that represent a board, with 'true' being a wall and 'false' being a walkable tile.</p>
-                <p>Given this matrix plus start and end coordinates, return the minimum number of steps required to move from the start tile to the end tile. Movement can only be made to orthogonally adjacent tiles.</p>
-              </div>
-              <div>
-                <h6>For example, given the following board:</h6>
-                <div class="card card-body card-text text-center gridstyle">
-                  [[f, f, f, f],<br>
-                  [t, t, f, t],<br>
-                  [f, f, f, f],<br>
-                  [f, f, f, f]]
-                </div>
-                <p>plus a start position of (0, 0)(bottom left) and an end position of (3, 0)(top left), the minimum number of stpes required to reach the end is 7 (because we need to walk through the opening at (2, 2).</p>
-                <div class="row">
-                  <div class="col">
-                    <div class="dropdown">
-                      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Pick a Grid
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <button class="dropdown-item" id="btnGrid1" onclick="displayGrid(grid1, 'grid1-default')" type="button">Grid1-Default</button>
-                        <button class="dropdown-item" id="btnGrid2" onclick="displayGrid(grid1, 'grid1-more complicated')" type="button">Grid2-More Complicated</button>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col text-right">
-                    <button class="btn btn-primary" onclick="solveMaze()">Solve</button>
-                  </div>
-                </div>
-              </div>
-              <div class="row align-items start">
-                <div class="col align-self-start text-success mt-3" id="results"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-8">
-          <!-- maze templates go here -->
-
-        </div>
-      </div>
     </div>
 
   </main>

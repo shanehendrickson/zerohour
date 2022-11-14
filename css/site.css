@@ -70,3 +70,9 @@ code[class*="language-"],
   bottom: 0;
   width: 100%;
 }
+
+/* Zero Hour Styles */
+
+.mazeapp {
+  margin-top: 75px;
+}
